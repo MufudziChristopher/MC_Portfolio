@@ -68,7 +68,6 @@ INSTALLED_APPS = [
     'Axis',
     'Africa',
     'Collective',
-    'NXTLVLTech',
     'home',
     'crispy_forms',
     'widget_tweaks',
