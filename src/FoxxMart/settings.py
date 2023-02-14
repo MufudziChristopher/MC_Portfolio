@@ -37,9 +37,9 @@ if os.path.isfile(env_file):
 
     env.read_env(env_file)
 # ...
-elif os.environ.get("FoxxMart", None):
+elif os.environ.get("Portfolio", None):
     # Pull secrets from Secret Manager
-    project_id = os.environ.get("FoxxMart")
+    project_id = os.environ.get("Portfolio")
 
     client = secretmanager.SecretManagerServiceClient()
     settings_name = os.environ.get("SETTINGS_NAME", "django_settings")
