@@ -1,0 +1,156 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Mufuddzi Christopher Online Portfolio</title>
+	<meta name="description" content="Online Portfolio for Mufudzi Christopher Web Development Solutions" />
+	<meta name="keywords" content="blueprint, template, html, css, page stack, 3d, perspective, navigation, menu" />
+	<meta name="author" content="Mufudzi CHristopher and Codrops" />
+	<link rel="shortcut icon" href="{% static 'images/brand.png' %}">
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="{% static 'home/css/demo.css' %}" />
+	<link rel="stylesheet" type="text/css" href="{% static 'home/css/component.css' %}" />
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+</head>
+
+<body>
+	<!-- navigation -->
+	<nav class="pages-nav">
+		<div class="pages-nav__item"><a class="link link--page" href="#page-home">Home</a></div>
+		<div class="pages-nav__item"><a class="link link--page" href="#page-Maxim-Kids">Maxim Kids</a></div>
+		<div class="pages-nav__item"><a class="link link--page" href="#page-Hospitality-Pro-Recruitment">Hospitality Pro</a></div>
+		<div class="pages-nav__item"><a class="link link--page" href="#page-3rd-Axis">3rd Axis</a></div>
+		<div class="pages-nav__item"><a class="link link--page" href="#page-The-Collective">The Collective</a></div>
+		<div class="pages-nav__item"><a class="link link--page" href="#page-NXT-LVL-Tech">NXT LVL Tech</a></div>
+		<div class="pages-nav__item pages-nav__item--small"><a class="link link--page link--faded" href="#page-Resume">Resume</a></div>
+		<div class="pages-nav__item pages-nav__item--small"><a class="link link--page link--faded" href="#page-Bio">Bio</a></div>
+		<div class="pages-nav__item pages-nav__item--small"><a class="link link--page link--faded" href="#page-Cover-Letter">Cover Letter</a></div>
+		<div class="pages-nav__item pages-nav__item--social">
+			<a class="link link--social link--faded" href="#"><i class="fa fa-twitter"></i><span class="text-hidden">Twitter</span></a>
+			<a class="link link--social link--faded" href="#"><i class="fa fa-linkedin"></i><span class="text-hidden">LinkedIn</span></a>
+			<a class="link link--social link--faded" href="#"><i class="fa fa-facebook"></i><span class="text-hidden">Facebook</span></a>
+			<a class="link link--social link--faded" href="#"><i class="fa fa-youtube-play"></i><span class="text-hidden">YouTube</span></a>
+		</div>
+	</nav>
+	<!-- /navigation-->
+	<!-- pages stack -->
+	<div class="pages-stack">
+		<!-- page -->
+		<div class="page" id="page-home">
+			<!-- Blueprint header -->
+
+			<header class="bp-header cf">
+				<span class="bp-header__present">Online Portfolio <span class="bp-tooltip bp-icon bp-icon--about" data-content="Online Portfolio for Mufudzi CHristopher Web Development Solutions"></span></span>
+				<h1 class="bp-header__title">Mufudzi Christopher</h1>
+				<p class="bp-header__desc">Freelance Web Developer and Website Designer </p>
+
+				<nav class="bp-nav">
+					<a class="bp-nav__item bp-icon bp-icon--prev" href="http://tympanus.net/Blueprints/ZoomSlider/" data-info="previous Blueprint"><span>Previous Blueprint</span></a>
+					<!--a class="bp-nav__item bp-icon bp-icon--next" href="" data-info="next Blueprint"><span>Next Blueprint</span></a-->
+					<a class="bp-nav__item bp-icon bp-icon--drop" href="http://tympanus.net/codrops/?p=25311" data-info="back to the Codrops article"><span>back to the Codrops article</span></a>
+					<a class="bp-nav__item bp-icon bp-icon--archive" href="mailto://mufudzichristopher@outlook.com" data-info="Email Me"><span>Mail Me</span></a>
+				</nav>
+			</header>
+			<p>			{% if messages %}
+						{% for message in messages %}
+						<div class="alert alert-warning alert-dismissable page" role="alert">
+								<button class="close" data-dismiss="modal"><small><sup>x</sup></small></button>
+								{{ message }}
+						</div>
+						{% endfor %}
+						{%  endif %}</p>
+			<img class="poster" src="{% static 'images/brand.png' %}" alt="img06" />
+		</div>
+		<div class="page" id="page-Maxim-Kids">
+			<header class="bp-header cf">
+				<h1 class="bp-header__title">Maxim Boxing Promotion</h1>
+				<p class="bp-header__desc">This portfolio section highlights my work on the WordPress website development project for Maxim Kids, showcasing updates and upgrades made to the website. Get a glimpse of my expertise and quality results as a freelance WordPress developer.
+ <a href="https://maximkids.org">MaximKids.org</a></p>
+				<p class="info">
+					Welcome to the portfolio section dedicated to showcasing my work on the WordPress website development project for Maxim Kids. This section will provide an in-depth look at the updates and upgrades I have made to the website, as well as the processes and techniques used to ensure the success of the project. With my extensive experience as a freelance WordPress developer, I am confident in my ability to deliver high-quality results that meet the needs and expectations of my clients. This portfolio section serves as a testament to my skills and expertise, and I am proud to share it with you.
+				</p>
+			</header>
+			<img class="poster" src="{% static 'images/maximkids.png' %}" alt="img06" />
+		</div>
+		<div class="page" id="page-Hospitality-Pro-Recruitment">
+			<header class="bp-header cf">
+				<h1 class="bp-header__title">Hospitality Pro Recruitment</h1>
+				<p class="bp-header__desc">A Multidimensional Recruitment Agency<a target="_blank" href="https://hospitalitypro.africa">HospitalityPro.africa</a></p>
+				<p class="info">
+					"The moment I began to understand what was going on with the treatment of animals, it led me more and more in the way of the path I am [on] now, which is a complete vegan." &mdash; Bryan Adams
+				</p>
+			</header>
+			<img class="poster" src="{% static 'images/hprologo.png' %}" alt="img06" />
+		</div>
+		<!-- /page -->
+		<div class="page" id="page-3rd-Axis" >
+			<header class="bp-header cf">
+				<h1 class="bp-header__title">3rd Axis</h1>
+				<p class="bp-header__desc">3D Printing Company based in Observatory, Cape Town<a href="{% url 'Axis:store' %}">   3rdAxis.co.za</a></p>
+				<p class="info">
+				</p>
+			</header>
+			<img class="poster" src="{% static 'images/III-light.gif' %}" alt="img06" />
+		</div>
+		<div class="page" id="page-The-Collective">
+			<header class="bp-header cf">
+				<h1 class="bp-header__title">The Collective</h1>
+				<p class="bp-header__desc">An Online Store showcasing limited edition designer goods. <a href="{% url 'Collective:store' %}">   TheCollective.co.za</a></p>
+				<p class="info">
+					"When you adopt a vegan diet we make a connection, you don't go back, it is not a diet, it is a lifestyle." &mdash; Freelee Frugivore
+				</p>
+			</header>
+			<img class="poster" src="{% static 'images/II-light.gif' %}" alt="img06" />
+		</div>
+		<div class="page" id="page-NXT-LVL-Tech">
+			<header class="bp-header cf">
+				<h1 class="bp-header__title">NXT LVL Tech</h1>
+				<p class="bp-header__desc">A visa application and tracking software for VFS Canada <a href="{% url 'NXTLVLTech:store' %}">NXTLVLTech.co.za</a></p>
+				<p class="info">
+					"I decided to pick the diet that I thought would maximize my chances of long-term survival." &mdash; Al Gore
+				</p>
+			</header>
+			<img class="poster" src="{% static 'images/logo.png' %}" alt="img06" />
+		</div>
+		<div class="page" id="page-Resume">
+			<header class="bp-header cf">
+				<h1 class="bp-header__title">Mufudzi Christopher Web Developer</h1>
+				<p class="bp-header__desc">Based on Ilya Kostin's Dribbble shot <a href="https://dribbble.com/shots/2286042-Stacked-navigation">Stacked navigation</a></p>
+		    <iframe src="{% static 'MCN_Resume.pdf' %}" width="100%" height="500px">
+		    </iframe>
+			</header>
+			<!-- <img class="poster" src="{% static 'images/brand.png' %}" alt="img06" /> -->
+		</div>
+		<div class="page" id="page-Bio">
+			<header class="bp-header cf">
+				<h1 class="bp-header__title">Blog &amp; News</h1>
+				<p class="bp-header__desc">Based on Ilya Kostin's Dribbble shot <a href="https://dribbble.com/shots/2286042-Stacked-navigation">Stacked navigation</a></p>
+				<p class="info">
+					"The question is not, 'Can they reason?' nor, 'Can they talk?' but rather, 'Can they suffer?" &mdash; Jeremy Bentham
+				</p>
+			</header>
+			<img class="poster" src="{% static 'images/III-light.gif' %}" alt="img06" />
+		</div>
+		<div class="page" id="page-Cover-Letter">
+			<header class="bp-header cf">
+				<h1 class="bp-header__title">Contact</h1>
+				<p class="bp-header__desc">Based on Ilya Kostin's Dribbble shot <a href="https://dribbble.com/shots/2286042-Stacked-navigation">Stacked navigation</a></p>
+				<p class="info">
+					"Man is the only animal that can remain on friendly terms with the victims he intends to eat until he eats them." &mdash; Samuel Butler
+				</p>
+			</header>
+			<img class="poster" src="{% static 'images/III-light.gif' %}" alt="img06" />
+		</div>
+	</div>
+	<!-- /pages-stack -->
+	<button class="menu-button"><span>Menu</span></button>
+	<script type="module" src="{% static 'home/js/classie.js' %}"></script>
+	<script type="module" src="{% static 'home/js/main.js' %}"></script>
+</body>
+
+</html>
