@@ -28,7 +28,6 @@ urlpatterns = [
     path('3rdAxis/', include('Axis.urls', namespace='Axis')),
     path('TheCollective/', include('Collective.urls', namespace='Collective')),
     path('AfricaQuizine/', include('Africa.urls', namespace='Africa')),
-    path('NXTLVLTech/', include('NXTLVLTech.urls', namespace='NXTLVLTech')),
     path('password_change_done/', auth_views.PasswordChangeDoneView.as_view(template_name="account/password_change_done.html"), name="password_change_done"),
     path('password_change/', auth_views.PasswordChangeView.as_view(template_name="account/password_change.html"), name="password_change"),
     path('reset_password/', auth_views.PasswordResetView.as_view(template_name="account/password_reset.html"), name="reset_password"),
